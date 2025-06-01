@@ -13,12 +13,13 @@ if (userRole === "admin") {
     accessLevel = "Full access granted";
 } else if (userRole === "manager") {
     accessLevel = "Limited access granted";
+} else if (userRole === "employee") {
+    accessLevel = "Dietary access granted";
 } else {
     accessLevel = "No access granted";
 }
 
 console.log("Access Level:", accessLevel);
-
 
 if (isLoggedIn) {
     if (userRole === "admin") {
@@ -30,7 +31,6 @@ if (isLoggedIn) {
     userMessage = "Please log in to access the system.";
 }
 console.log("User Message:", userMessage);
-
 
 switch (userType) {
     case "admin":
